@@ -1,13 +1,118 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>16 Wochen</title>
-<style>body{font-family:system-ui,sans-serif;max-width:40rem;margin:3rem auto;padding:0 1rem}</style>
+<title>16 Wochen – Die Zukunft, jetzt in HD</title>
+<meta name="description" content="Welches Datum ist heute in 16 Wochen? Ein Klick, und es liegt in deiner Zwischenablage.">
+<meta name="theme-color" content="#2b3a4f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2372b81f'/%3E%3Crect width='32' height='15' rx='7' fill='%23fff' opacity='.3'/%3E%3Ctext x='16' y='23' font-family='Arial' font-size='17' font-weight='bold' fill='%23fff' text-anchor='middle'%3E16%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>16 Wochen</h1>
-<p>X = heute + 16 Wochen</p>
+
+<div class="band" aria-hidden="true">BETA seit 2012</div>
+
+<header>
+  <h1 class="logo"><span>16</span>Wochen</h1>
+  <p class="claim">Die Zukunft. Jetzt in HD. <span class="neu">NEU!</span></p>
+</header>
+
+<div class="seite">
+  <div class="haupt">
+  <main class="karte">
+    <div class="leder"><span>Mein Zukunfts-Kalender</span></div>
+    <div class="inhalt">
+
+      <div class="blaetter">
+        <section class="spalte" aria-labelledby="titel-heute">
+          <div class="blatt">
+            <h2 id="titel-heute">Heute</h2>
+            <div class="zahl" id="heute-tag" aria-hidden="true">–</div>
+            <div class="monat" id="heute-monat" aria-hidden="true">&nbsp;</div>
+          </div>
+          <p class="lang" id="heute-lang">Lade das Heute …</p>
+        </section>
+
+        <div class="pfeil" aria-hidden="true">
+          <svg viewBox="0 0 60 40"><path d="M3 14h30V3l24 17-24 17V26H3z"/></svg>
+        </div>
+
+        <section class="spalte" aria-labelledby="titel-ziel" aria-live="polite">
+          <div class="blatt zukunft leer" id="ziel-blatt">
+            <h2 id="titel-ziel">In 16 Wochen</h2>
+            <div class="zahl" id="ziel-tag" aria-hidden="true">?</div>
+            <div class="monat" id="ziel-monat" aria-hidden="true">streng geheim</div>
+          </div>
+          <p class="lang" id="ziel-lang">Noch ungewiss. Spooky.</p>
+        </section>
+      </div>
+
+      <div class="knopfzone">
+        <button type="button" id="knopf">+16 Wochen</button>
+        <p class="kritzel" aria-hidden="true">
+          <svg viewBox="0 0 60 40"><path d="M55 36C30 38 12 26 12 6M3 16l9-12 11 10"/></svg>
+          hier klicken!!1
+        </p>
+      </div>
+
+      <div class="laden" id="laden" hidden>
+        <div class="balken"><div id="fuellung"></div></div>
+        <p id="ladetext">Verbinde mit der Zukunft …</p>
+      </div>
+
+      <div class="meldung" id="meldung" role="status" hidden>
+        <p id="meldungstext"></p>
+        <input id="notfeld" type="text" readonly hidden aria-label="Datum zum manuellen Kopieren">
+      </div>
+
+      <noscript><p class="meldung fehler">Ohne JavaScript keine Zukunft. Bitte einschalten (oder 112 Tage mit den Fingern abzählen).</p></noscript>
+    </div>
+  </main>
+
+    <section class="box" id="fakten">
+      <h3>Gut zu wissen</h3>
+      <ul id="faktenliste"></ul>
+    </section>
+  </div>
+
+  <aside>
+    <figure class="polaroid" id="meme">
+      <svg viewBox="0 0 300 300" role="img" aria-labelledby="meme-titel">
+        <title id="meme-titel">Y U NO Guy</title>
+        <rect id="meme-grund" width="300" height="300" fill="#2c4762"/>
+        <image id="meme-bild" href="memes/y-u-no.jpg" x="0" y="0" width="300" height="300"/>
+        <g class="memetext">
+          <text id="oben" x="150" y="42" lengthAdjust="spacingAndGlyphs">Y U NO</text>
+          <text id="unten" x="150" y="288" textLength="270" lengthAdjust="spacingAndGlyphs">KNOPF DRÜCKEN?</text>
+        </g>
+      </svg>
+      <figcaption id="bildunterschrift">Er wartet. Ungeduldig.</figcaption>
+    </figure>
+
+    <section class="box" id="wandkasten">
+      <h3>Pinnwand</h3>
+      <ul class="pinnwand" id="pinnwand"></ul>
+      <p class="daumen">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1 7h3v8H1zM5 14V7l3-6c2 0 2.5 1.5 2 3l-.5 2H14c1.5 0 1.5 2 .5 2.3 1 .5.7 2-.3 2.2.7.7.4 1.9-.7 2 .4 1-.3 1.5-1.2 1.5H8z"/></svg>
+        <span id="gefaellt">Mutti und 3 anderen gefällt das.</span>
+      </p>
+    </section>
+  </aside>
+</div>
+
+<footer>
+  <p>Optimiert für Internet Explorer 9 bei 1024 × 768 · 100 % Flash-frei (nicht freiwillig)</p>
+  <p>© 2012 16Wochen UG (haftungsbeschränkt lustig) · Geschäftsmodell folgt · <i>Von meinem iPhone gesendet</i></p>
+</footer>
+
+<div class="growl" id="growl" aria-live="polite" hidden>
+  <b id="growl-titel"></b>
+  <span id="growl-text"></span>
+</div>
+
+<div id="konfetti" aria-hidden="true"></div>
+
+<script src="app.js"></script>
 </body>
 </html>
