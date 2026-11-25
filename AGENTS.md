@@ -1,16 +1,16 @@
 <!-- omnex:begin -->
 # AGENTS.md
 
-16 Wochen: X = heute + 16 Wochen
+16wochen: X = heute + 16 Wochen
 
 ## Project
 - Specs: `resources/specs.md`. Read them before changing anything and follow them step by step.
-- Web address: https://16-wochen.omn.n00dle.net
+- Web address: https://16wochen.omn.n00dle.net
 - This project is managed by Omnex. Omnex handles the git repo (Forgejo), the web server and the subdomain. Do not set those up yourself.
 
 ## Running and checking
 - The web server serves the files in this folder directly. There is no build step and no restart: a saved change is live at once.
-- After a change, check it: `curl -sI https://16-wochen.omn.n00dle.net` should return 200.
+- After a change, check it: `curl -sI https://16wochen.omn.n00dle.net` should return 200.
 - Do not use SSH and do not touch the host.
 - If the server needs a restart or its logs, stop and ask me.
 
